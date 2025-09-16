@@ -71,6 +71,7 @@
 }
 
 .section-label {
+  font-family: "Samsung InterFace", sans-serif;
   font-size: 14px;
   color: #4b5563;
   margin-bottom: 6px;
@@ -79,6 +80,7 @@
 }
 
 .section-value {
+  font-family: "Samsung InterFace", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #202224;
