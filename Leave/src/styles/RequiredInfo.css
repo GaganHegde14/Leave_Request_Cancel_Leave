@@ -74,7 +74,7 @@
 }
 
 .radio-option input[type="radio"]:checked {
-  border-color: #007bff;
+  border-color: #38aee0;
   background: white;
 }
 
@@ -87,7 +87,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #007bff;
+  background: #38aee0;
 }
 
 .radio-text {

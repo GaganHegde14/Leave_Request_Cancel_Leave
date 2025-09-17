@@ -53,6 +53,11 @@
   text-align: left;
 }
 
+.manager-approval-text {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
 .clock-icon {
   display: flex;
   align-items: center;

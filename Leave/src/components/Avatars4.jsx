@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Avatars3.css";
+import "../styles/PaternityLeave.css";
 import Header from "./Header";
 import EmployeeProfile from "./EmployeeProfile";
 import RequiredInfo from "./CancelLeaveHeader";

@@ -11,6 +11,24 @@ const Header = ({
   showBackArrow = true,
   showClockIcon = true,
 }) => {
+  // Check if title contains " - Manager Approval" to apply different styling
+  const renderTitle = () => {
+    if (
+      title &&
+      typeof title === "string" &&
+      title.includes(" - Manager Approval")
+    ) {
+      const parts = title.split(" - Manager Approval");
+      return (
+        <h1 className="page-title">
+          {parts[0]}
+          <span className="manager-approval-text"> - Manager Approval</span>
+        </h1>
+      );
+    }
+    return <h1 className="page-title">{title || ""}</h1>;
+  };
+
   return (
     <div className="header-section">
       {breadcrumb && (
@@ -28,7 +46,7 @@ const Header = ({
             <ArrowBackIcon />
           </div>
         )}
-        <h1 className="page-title">{title}</h1>
+        {renderTitle()}
         {showClockIcon && (
           <div className="clock-icon" onClick={onClockClick}>
             <img src={ClockIcon} alt="Clock" width="30" height="30" />

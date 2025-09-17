@@ -97,7 +97,7 @@
 }
 
 .request-type-options .radio-option input[type="radio"]:checked {
-  border-color: #007bff;
+  border-color: #38aee0;
   background: white;
 }
 
@@ -110,7 +110,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #007bff;
+  background: #38aee0;
 }
 
 .request-type-options .radio-option input[type="radio"]:checked + .radio-text {
@@ -214,8 +214,8 @@
 }
 
 .leave-table input[type="checkbox"]:checked {
-  border-color: #3b82f6;
-  background: #3b82f6;
+  border-color: #38aee0;
+  background: #38aee0;
 }
 
 .leave-table input[type="checkbox"]:checked::before {
@@ -273,8 +273,8 @@
 
 .reason-textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #38aee0;
+  box-shadow: 0 0 0 2px rgba(56, 174, 224, 0.25);
 }
 
 .comment-section {
@@ -311,8 +311,8 @@
 
 .comment-textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #38aee0;
+  box-shadow: 0 0 0 2px rgba(56, 174, 224, 0.25);
 }
 
 .view-policies-section {
@@ -486,7 +486,7 @@
 }
 
 .transfer-wf-button {
-  padding: 8px 20px;
+  padding: 8px 7px;
   border: 2px solid #38aee0;
   background-color: transparent;
   color: #38aee0;

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
-import Avatars3 from "./components/Avatars3.jsx";
+import PaternityLeave from "./components/PaternityLeave.jsx";
 import ApplyLeave from "./components/ApplyLeave.jsx";
 import CancelLeave from "./components/CancelLeave.jsx";
 import Avatars4 from "./components/Avatars4.jsx";
@@ -20,7 +18,7 @@ function App() {
           <Route path="/" element={<CancelLeave />} />
           {/* <Route path="/cancel-leave" element={<CancelLeave />} /> */}
           <Route path="/ApplyLeave" element={<ApplyLeave />} />
-          <Route path="/Avatars3" element={<Avatars3 />} />
+          <Route path="/PaternityLeave" element={<PaternityLeave />} />
           <Route path="/Avatars4" element={<Avatars4 />} />
         </Routes>
       </Router>

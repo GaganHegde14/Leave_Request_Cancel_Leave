@@ -79,7 +79,7 @@
 }
 
 .request-type-options .radio-option input[type="radio"]:checked {
-  border-color: #007bff;
+  border-color: #38aee0;
   background: white;
 }
 
@@ -92,7 +92,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #007bff;
+  background: #38aee0;
 }
 
 .request-type-options .radio-option .radio-text {
@@ -133,8 +133,8 @@
 
 .transfer-to-input:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #38aee0;
+  box-shadow: 0 0 0 2px rgba(56, 174, 224, 0.25);
 }
 
 /* Transfer Comment Section */
@@ -172,8 +172,8 @@
 
 .transfer-comment-textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #38aee0;
+  box-shadow: 0 0 0 2px rgba(56, 174, 224, 0.25);
 }
 
 /* Transfer Workflow Button */
@@ -184,7 +184,7 @@
 }
 
 .transfer-wf-button {
-  padding: 8px 20px;
+  padding: 8px 7px;
   border: 2px solid #38aee0;
   background-color: transparent;
   color: #38aee0;
@@ -196,6 +196,22 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: none;
+}
+
+.transfer-wf-button:hover {
+  background-color: transparent;
+  color: #38aee0;
+  border-color: #38aee0;
+  transform: none;
+  box-shadow: none;
+}
+
+.transfer-wf-button:focus {
+  outline: none;
+  background-color: transparent;
+  color: #38aee0;
+  border-color: #38aee0;
 }
 
 .transfer-wf-icon {

@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/ApplyLeave.css";
+import "../styles/PaternityLeave.css";
 import Header from "./Header";
 import EmployeeProfile from "./EmployeeProfile";
 import RequiredInfo from "./LeaveApprovalHeader";
 import TransferWorkflow from "./TransferWorkflow";
 import applyIcon from "../assets/svg/applyicon.svg";
 
-const ApplyLeave = () => {
+const PaternityLeave = () => {
   // Event handlers for all clickable components
   const handleBackClick = () => {
     console.log("Back button clicked");
@@ -93,15 +93,10 @@ const ApplyLeave = () => {
   };
 
   return (
-    <div className="apply-leave-container">
+    <div className="paternity-leave-container">
       <Header
-        breadcrumb="My Workspace >  Leave Approval Request"
-        title={
-          <span>
-            Leave Request or Cancel{" "}
-            <span className="employee-submit-text">- Manager Approval</span>
-          </span>
-        }
+        breadcrumb="My Workspace > Leave Approval Request"
+        title="Leave Request or Cancel - Manager Approval"
         onBackClick={handleBackClick}
         onClockClick={handleClockClick}
       />
@@ -124,7 +119,7 @@ const ApplyLeave = () => {
           <div className="apply-approval-section">
             <div className="section-header">
               <img src={applyIcon} alt="Apply" className="apply-icon" />
-              <span className="section-title">Apply/Cancel Leave Approval</span>
+              <span className="section-title">Paternity Leave Management</span>
             </div>
 
             <div className="leave-list-section">
@@ -137,30 +132,18 @@ const ApplyLeave = () => {
                       <th>Applied Date</th>
                       <th>Leave From</th>
                       <th>Leave To</th>
+                      <th>Ref. Date</th>
                       <th>No of Days</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>CL</td>
+                      <td>Paternity Leave</td>
                       <td>30-June-2025</td>
                       <td>02-May-2025</td>
-                      <td>07-May-2025</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>SL</td>
-                      <td>30-June-2025</td>
-                      <td>08-May-2025</td>
-                      <td>14-May-2025</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>PL</td>
-                      <td>30-June-2025</td>
-                      <td>15-May-2025</td>
-                      <td>15-May-2025</td>
-                      <td>1</td>
+                      <td>15-Aug-2025</td>
+                      <td>10-Aug-2025</td>
+                      <td>182</td>
                     </tr>
                   </tbody>
                 </table>
@@ -170,10 +153,11 @@ const ApplyLeave = () => {
             <div className="reason-section">
               <label className="reason-label">Reason (Max 100 Chars)</label>
               <textarea
-                className="reason-textarea"
+                className="reason-textarea readonly-textarea"
                 placeholder="I have an important personal matter to attend at my Home town."
                 defaultValue="I have an important personal matter to attend at my Home town."
                 maxLength="100"
+                readOnly
               />
             </div>
 
@@ -207,4 +191,4 @@ const ApplyLeave = () => {
   );
 };
 
-export default ApplyLeave;
+export default PaternityLeave;
