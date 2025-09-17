@@ -147,7 +147,7 @@
 }
 
 .leave-table-container {
-  overflow-x: auto;
+  overflow-x: visible;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
 }
@@ -156,7 +156,7 @@
   width: 100%;
   border-collapse: collapse;
   background: white;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 .leave-table th {
@@ -179,41 +179,41 @@
 
 .leave-table th:nth-child(1),
 .leave-table td:nth-child(1) {
-  width: 60px;
+  width: 50px;
   padding: 12px 20px;
   text-align: center;
 }
 
 .leave-table th:nth-child(2),
 .leave-table td:nth-child(2) {
-  width: 100px;
+  width: 120px;
+  padding-left: 20px;
 }
 
 .leave-table th:nth-child(3),
 .leave-table td:nth-child(3) {
-  width: 120px;
-  padding-left: 60px;
+  width: 140px;
+  padding-left: 20px;
 }
 
 .leave-table th:nth-child(4),
 .leave-table td:nth-child(4) {
-  width: 120px;
-  padding-left: 60px;
+  width: 140px;
+  padding-left: 20px;
 }
 
 .leave-table th:nth-child(5),
 .leave-table td:nth-child(5) {
-  width: 80px;
+  width: 100px;
   text-align: center;
-  padding-left: 60px;
+  padding-left: 20px;
 }
 
 .leave-table th:nth-child(6),
 .leave-table td:nth-child(6) {
   width: auto;
-  min-width: 200px;
-  padding-right: 20px;
-  padding-left: 60px;
+  padding-right: 60px;
+  padding-left: 20px;
 }
 
 .leave-table tr:last-child td {
@@ -230,6 +230,52 @@
   background: #f9fafb;
   position: relative;
   transition: all 0.2s ease;
+}
+
+/* CancelLeave specific checkbox alignment */
+.cancel-leave-container .leave-table th:nth-child(1),
+.cancel-leave-container .leave-table td:nth-child(1) {
+  text-align: left;
+  padding-left: 35px;
+  padding-right: 0px;
+  width: 35px !important;
+}
+
+.cancel-leave-container .leave-table input[type="checkbox"] {
+  margin-left: 0px;
+}
+
+/* CancelLeave specific Leave Type column positioning - move closer to checkboxes */
+.cancel-leave-container .leave-table th:nth-child(2),
+.cancel-leave-container .leave-table td:nth-child(2) {
+  padding-left: 50px !important;
+  width: 100px !important;
+}
+
+/* CancelLeave specific column width and positioning adjustments */
+.cancel-leave-container .leave-table th:nth-child(3),
+.cancel-leave-container .leave-table td:nth-child(3) {
+  width: 120px !important;
+  padding-left: 50px !important;
+}
+
+.cancel-leave-container .leave-table th:nth-child(4),
+.cancel-leave-container .leave-table td:nth-child(4) {
+  width: 120px !important;
+  padding-left: 50px !important;
+}
+
+.cancel-leave-container .leave-table th:nth-child(5),
+.cancel-leave-container .leave-table td:nth-child(5) {
+  width: 80px !important;
+  padding-left: 50px !important;
+}
+
+.cancel-leave-container .leave-table th:nth-child(6),
+.cancel-leave-container .leave-table td:nth-child(6) {
+  /* width: auto !important; */
+  padding-left: 10px !important;
+  padding-right: 50px !important;
 }
 
 .leave-table input[type="checkbox"]:checked {

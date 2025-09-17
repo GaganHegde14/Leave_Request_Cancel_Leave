@@ -110,7 +110,9 @@
 .leave-table td:nth-child(1) {
   width: 140px !important;
   padding-left: 35px !important;
+  padding-right: 12px !important;
   white-space: nowrap;
+  text-align: left;
 }
 
 .leave-table th:nth-child(2),
@@ -144,7 +146,6 @@
 .leave-table th:nth-child(6),
 .leave-table td:nth-child(6) {
   width: 130px !important;
-  text-align: center;
   padding-left: 40px !important;
   padding-right: 20px !important;
   white-space: nowrap;
