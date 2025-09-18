@@ -258,7 +258,10 @@
   height: 90px;
   min-height: 90px;
   max-height: 90px;
-  padding: 10px 12px;
+  padding: 0 12px; /* horizontal padding only */
+  display: block;
+  line-height: 1.4; /* normal line height for proper text flow */
+  text-align: left;
   border: 1px solid #d0d0d0;
   background-color: white;
   border-radius: 4px;
@@ -266,7 +269,10 @@
   font-size: 14px;
   color: #333;
   resize: none;
-  line-height: 1.4;
+  /* Use padding-top to maintain vertical centering without breaking text input */
+  padding-top: 30px;
+  padding-bottom: 5px;
+  overflow-y: auto; /* allow scrolling for longer text */
   box-sizing: border-box;
   margin: 0;
 }
@@ -296,7 +302,10 @@
   height: 90px;
   min-height: 90px;
   max-height: 90px;
-  padding: 10px 12px;
+  padding: 0 12px; /* horizontal padding only */
+  display: block;
+  line-height: 1.4; /* normal line height for proper text flow */
+  text-align: left;
   border: 1px solid #d0d0d0;
   background-color: white;
   border-radius: 4px;
@@ -304,7 +313,10 @@
   font-size: 14px;
   color: #333;
   resize: none;
-  line-height: 1.4;
+  /* Use padding-top to maintain vertical centering without breaking text input */
+  padding-top: 30px;
+  padding-bottom: 5px;
+  overflow-y: auto; /* allow scrolling for longer text */
   box-sizing: border-box;
   margin: 0;
 }

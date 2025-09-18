@@ -164,7 +164,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 .reason-label {
   display: block;
   font-weight: 650;
@@ -178,7 +177,10 @@
   height: 90px;
   min-height: 90px;
   max-height: 90px;
-  padding: 10px 12px;
+  padding: 0 12px; /* horizontal padding only */
+  display: block;
+  line-height: 1.4; /* normal line height for proper text flow */
+  text-align: left;
   border: 1px solid #d0d0d0;
   background-color: white;
   border-radius: 4px;
@@ -186,7 +188,10 @@
   font-size: 14px;
   color: #333;
   resize: none;
-  line-height: 1.4;
+  /* Use padding-top to maintain vertical centering without breaking text input */
+  padding-top: 30px;
+  padding-bottom: 5px;
+  overflow-y: auto; /* allow scrolling for longer text */
   box-sizing: border-box;
   margin: 0;
 }
@@ -198,8 +203,16 @@
 }
 
 .readonly-textarea {
-  background-color: #d0d5dd !important;
+  background-color: #efeded !important;
   cursor: not-allowed;
+  padding: 0 12px !important; /* horizontal padding only - same as ApplyLeave */
+  display: block !important;
+  line-height: 1.4 !important; /* normal line height */
+  text-align: left !important;
+  /* Use padding-top to maintain vertical centering - same as ApplyLeave */
+  padding-top: 30px !important;
+  padding-bottom: 5px !important;
+  overflow-y: auto !important; /* allow scrolling if content is long */
 }
 
 .readonly-textarea:focus {
@@ -213,7 +226,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 .comment-label {
   display: block;
   font-weight: 650;
@@ -227,7 +239,10 @@
   height: 90px;
   min-height: 90px;
   max-height: 90px;
-  padding: 10px 12px;
+  padding: 0 12px; /* horizontal padding only */
+  display: block;
+  line-height: 90px; /* vertical centering for single-line content */
+  text-align: left;
   border: 1px solid #d0d0d0;
   background-color: white;
   border-radius: 4px;
@@ -235,7 +250,6 @@
   font-size: 14px;
   color: #333;
   resize: none;
-  line-height: 1.4;
   box-sizing: border-box;
   margin: 0;
 }
